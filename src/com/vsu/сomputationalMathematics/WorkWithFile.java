@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class WorkWithFile {
+class WorkWithFile {
     private int n;
     private double a;
     private double b;
@@ -13,49 +13,41 @@ public class WorkWithFile {
     private String[] x;
     private String[] y;
 
-    public WorkWithFile() {
+    WorkWithFile() {
     }
 
-    public int getN() {
+    int getN() {
         return n;
     }
 
-    public double getA() {
+    double getA() {
         return a;
     }
 
-    public double getB() {
+    double getB() {
         return b;
     }
 
-    public double getXx() {
+    double getXx() {
         return xx;
     }
 
-    public String[] getX() {
+    String[] getX() {
         return x;
     }
 
-    public String[] getY() {
+    String[] getY() {
         return y;
     }
 
-    public void FileWorking() throws IOException {
+    void FileWorking() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("File.txt"));
-        String c;
-        c = reader.readLine();
-        n = Integer.parseInt(c);
-        c = reader.readLine();
-        x = c.split(" ");
-        c = reader.readLine();
-        y = c.split(" ");
-        c = reader.readLine();
-        a = Double.parseDouble(c);
-        c = reader.readLine();
-        b = Double.parseDouble(c);
-        c = reader.readLine();
-        xx = Double.parseDouble(c);
+        n = Integer.parseInt(reader.readLine());
+        x = reader.readLine().split(" ");
+        y = reader.readLine().split(" ");
+        a = Double.parseDouble(reader.readLine());
+        b = Double.parseDouble(reader.readLine());
+        xx = Double.parseDouble(reader.readLine());
         reader.close();
     }
-
 }

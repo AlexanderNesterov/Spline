@@ -1,1 +1,2 @@
-IER=2. Violated the order of increasing elements.
+IER=0. Errors not found!
+YY = 0.0
