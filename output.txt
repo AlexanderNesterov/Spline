@@ -1,0 +1,5 @@
+x1 = NaN
+x2 = NaN
+x3 = NaN
+x4 = NaN
+x5 = NaN
